@@ -45,10 +45,18 @@ and, or, not, in, not in
 # print(list2)
 
 
-list1 = [chr(177), "cat", "car", "Dog", "dog", "8-ball", "5", chr(162)]
-list1.sort()
-print(list1)
+# list1 = [chr(177), "cat", "car", "Dog", "dog", "8-ball", "5", chr(162)]
+# list1.sort()
+# print(list1)
 
-monarchs = [("George", 5), ("Elizaeth", 2), ("George", 6), ("Elizabeth", 1)]
-monarchs.sort()
-print(monarchs)
+# monarchs = [("George", 5), ("Elizaeth", 2), ("George", 6), ("Elizabeth", 1)]
+# monarchs.sort()
+# print(monarchs)
+
+
+state = "CA"
+states = ["MD", "VA", "WV", "DE"]
+
+is_in_list = state in states 
+
+print(not(not(is_in_list) and "VA" in states))
