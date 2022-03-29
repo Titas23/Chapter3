@@ -104,6 +104,26 @@
 
 # Do example 7 in the textbook at home
 
+str_1 = "Enter total earnings for this year prior to current pay period: "
+ytd_earnings = eval(input(str_1)) #year-to-date earnings
+cur_earnings = eval(input("Enter earnings for the current pay period: "))
+total_earnings = ytd_earnings + cur_earnings
+
+social_security_ben_tax = 0 
+if total_earnings <= 117000:
+    social_security_ben_tax = 0.062 * cur_earnings
+elif ytd_earnings < 117000:
+    social_security_ben_tax = 0.062 * (117000 - ytd_earnings)
+# Calculate and display the FICA tax
+medicare_tax = 0.0145 * cur_earnings
+if ytd_earnings >= 200000:
+    medicare_tax += 0.009 * cur_earnings
+elif total_earnings > 200000:
+    medicare_tax += 0.009 * (total_earnings - 200000)
+fica_tax = social_security_ben_tax + medicare_tax
+print("FICA tax for the current pay period: ${0:0,.2f}".format(fica_tax))
+
+
 
 # Example 8 in the textbook
 
