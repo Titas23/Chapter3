@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 # if not 90 >= 90:
 #     print("Your grade is A")
 # else: 
